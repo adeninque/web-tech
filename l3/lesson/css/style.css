@@ -1,0 +1,28 @@
+body {
+    background-color: rgb(228, 209, 182);
+    font-family: 'Arial';
+}
+
+#computers {
+    color: aqua;
+}
+
+#subjects {
+    color: aquamarine;
+}
+
+#some {
+    color:blue;
+}
+
+.bigger {
+    font-size: 30px;
+}
+
+ul.bold {
+    font-weight: 900;
+}
+
+p[style] {
+    font-size: 10px;
+}
