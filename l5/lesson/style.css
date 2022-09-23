@@ -1,0 +1,14 @@
+body {
+    background: #fff;
+    font-size: 24px;
+}
+
+.section-1{
+    background-color: red;
+}
+.section-2{
+    background-color: green;
+}
+.section-3{
+    background-color: blue;
+}

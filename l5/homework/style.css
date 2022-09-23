@@ -1,0 +1,41 @@
+.container {
+    max-width: 570px;
+    margin: auto;
+}
+
+.header {
+    width: 100%;
+    border: 1px solid black;
+    text-align: center;
+}
+.navbar {
+    width: 100%;
+    border: 1px solid black;
+    text-align: center;
+}
+.content {
+    display: flex;
+}
+.left {
+    width: 400px;
+}
+.section {
+    padding: 20px 0;
+    text-align: center;
+    border: 1px solid black;
+}
+.article {
+    padding: 20px 0;
+    text-align: center;
+    border: 1px solid black;
+}
+.aside {
+    border: 1px solid black;
+    width: 170px;
+    text-align: center;
+}
+.footer {
+    width: 100%;
+    border: 1px solid black;
+    text-align: center;
+}
