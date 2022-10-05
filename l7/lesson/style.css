@@ -119,12 +119,31 @@ table {
     font-family: 'Roboto';
 }
 .bar {
+    display: flex;
+    margin: 1.7rem 0 2.8rem 0;
 }
 .bar-elem {
+    margin: 0 1rem 0 0;
+    font-weight: 600;
+    padding: 0.3rem 1.1rem;
+}
+.bar-elem:last-child {
+    margin: 0;
+}
+.bar-elem._choosed {
+    background-color: #FFB742;
 }
 .works {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
 }
 .works-elem {
+    width: 100%;
+    background-color: #000;
+}
+.works-elem div {
+    padding: 100% 0 0 0;
 }
 .works-elem-double {
 }
