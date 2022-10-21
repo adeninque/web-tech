@@ -1,0 +1,17 @@
+.counter {
+    width: 50%;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.counter div {
+    padding: 50% 0 0 0;
+}
+
+.counter h1 {
+    margin: 0;
+    padding: 0;
+}

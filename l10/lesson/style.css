@@ -1,0 +1,64 @@
+body {
+    font-family: 'arial';
+    margin: 0;
+    padding: 0;
+}
+
+p,h1,h2,h3,h4 {
+    margin: 0;
+}
+
+.container {
+    max-width: 940px;
+    padding: 0 20px;
+    margin: auto;
+}
+.title {
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+.discription {
+    margin: 2rem 0 0 0;
+    font-size: 2rem;
+}
+.input {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin: 2rem 0 0 0;
+    grid-gap: 0.5rem;
+}
+.input__title {
+}
+.input__input {
+}
+.input__btn {
+    background-color: aquamarine;
+    border: none;
+    font-size: 1.5rem;
+}
+.results {
+    margin: 2rem 0 0 0;
+    visibility: hidden;
+}
+.results__guesses {
+}
+.results__status {
+    margin: 1rem 0 0 0;
+}
+.results__status._wrong {
+    background-color: red;
+}
+.results__status._right {
+    background-color: lightgreen;
+}
+.results__msg {
+    margin: 1rem 0 0 0;
+}
+.relust_reset {
+    margin: 1rem 0 0 0;
+    display: none;
+    background-color: aquamarine;
+    border: none;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
