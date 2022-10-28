@@ -1,0 +1,173 @@
+@import url('null.css');
+
+html, body {
+	height: 100%;
+	background-color: var(--bg-color);
+}
+
+.container {
+	max-width: 1210px;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+
+.wrapper {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.fullscreen {
+	min-height: 100vh;
+	display: flex;
+	&__body {
+		flex: 1 1 auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+}
+
+.header {
+	flex: auto 1 auto;
+	display: grid;
+	grid-template-columns: 3rem 1fr 3rem;
+	grid-template-rows: 5rem;
+	padding: 1rem 0;
+	&__logo {
+		height: 100%;
+	}
+
+	&__nav {
+	}
+}
+.nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	&__elem {
+		font-size: 2rem;
+		color: #fff;
+		font-weight: 500;
+		margin: 0 2rem 0 0;
+		transition: .3s ease-in-out;
+		position: relative;
+		&:last-child {
+			margin: 0;
+		}
+
+		&:hover {
+			color: var(--main-site-color);
+			&::after {
+				width: 50%;
+			}
+		}
+
+		&::after{
+			display: block;
+			position: absolute;
+			content: '';
+			width: 0%;
+			height: 3px;
+			background-color: var(--main-site-color);
+			transition: .3s ease-in-out;
+			margin: 0 auto;
+			left: 0;
+			right: 0;
+			bottom: -0.5rem;
+		}
+	}
+}
+
+.about {
+	// flex: 1 1 auto;
+	margin: 4rem 0;
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-template-rows: auto;
+	gap: 2rem;
+	// justify-items: start;
+	align-items: center;
+	&__text {
+	}
+	
+	&__title {
+	}
+
+	&__subtitle {
+		font-size: 1.5rem;
+		margin: 2rem 0 0 0;
+	}
+
+	&__image {
+		width: 100%;	
+		background-color: #fff;
+		border-radius: 50%;
+		
+		&::after {
+			content: '';
+			display: block;
+			padding: 100% 0 0 0;
+		}
+	}
+}
+
+
+.partfolio {
+	display: none; 
+	&__title {
+	}
+
+	&__works {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 2rem;
+		margin: 2rem 0 0 0;
+	}
+}
+
+.works {
+
+	&__card {
+		cursor: pointer;
+		display: block;
+		color: #fff;
+	}
+
+	&__image {
+		width: 100%;
+		background-color: #fff;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 50%;
+
+		&:hover {
+			background-size: auto 110%;
+		}
+
+		&::after {
+			content: '';
+			display: block;
+			padding: 56.25% 0 0 0;
+		}
+	}
+
+	&__title {
+		margin: 1rem 0 0 0;
+		font-size: 2rem;
+		text-transform: uppercase;
+	}
+}
+
+
+
+.links {
+	// flex: 1 1 auto;
+	display: none;
+}
+
+.footer {
+	height: 200px;
+	width: 100%;
+	background-color: #fff;
+}
