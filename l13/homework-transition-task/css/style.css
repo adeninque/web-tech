@@ -1,0 +1,33 @@
+@import url('null.css');
+
+.container {
+  max-width: 1170px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.nav {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-between;
+}
+
+.nav__elem {
+  background-color: black;
+  margin:0 12px 0 0;
+  color:  white;
+  font-size: 24px;
+  text-align: center;
+  padding: 12px 0;
+  border: 2px solid black;
+  transition: .3s ease-in-out;
+}
+
+.nav__elem:last-child{
+  margin: 0;
+}
+
+.nav__elem:hover, ._choosed {
+  background: white;
+  color: black;
+}
