@@ -1,3 +1,7 @@
-import myJson from './db.json';
+document.addEventListener("DOMContentLoaded", ()=>{
+    url = 'https://raw.githubusercontent.com/adeninque/web-tech/main/finalproject/homework/db.json'
 
-console.log(myJson)
+    const dbPromise = fetch(url).then(response => response.json().then(obj => {
+        console.log(obj);
+    }))
+})
